@@ -15,10 +15,10 @@
 <header class="site-header">
   <div class="container">
     <a class="brand" href="index.html">
-      <span class="brand-mark">AD</span>
+      <img class="brand-logo" src="images/geoflume_mark.svg" alt="GeoFlume lab logo">
       <span>
-        <span class="brand-name">Andrea Del Gaudio</span>
-        <span class="brand-sub">PhD, Civil and Environmental Engineer</span>
+        <span class="brand-name">GEOFLUME Lab</span>
+        <span class="brand-sub">Andrea Del Gaudio PhD, Civil and Environmental Engineer</span>
       </span>
     </a>
     <button class="nav-toggle" aria-label="Menu">&#9776;</button>
@@ -56,8 +56,8 @@
     </div>
 
     <!-- PROJECT EXPLANATION: edit the text below -->
-    <p>Supported by an FSR-FNRS Incoming Postdoctoral Fellowship at the Institute of Mechanics, Materials and Civil Engineering (iMMC), this project brings together my two main research lines: turbulent flow through vegetation and unsteady flood and dam-break waves.</p>
-    <p>Urban flood models based on the depth-averaged shallow-water equations can account for buildings in different ways. The most accurate is the <em>building-hole</em> approach, where every building is cut out of the computational mesh; however, meshing each building individually is very time-consuming and computationally demanding at the scale of a city. For this reason, buildings are often represented through an <em>increased roughness</em>, which is fast but not physically based. The <em>drag approach</em> offers a compromise: it is computationally efficient and more physically based, as buildings act on the flow through a drag force proportional to a drag coefficient C<sub>D</sub>.</p>
+    <p>Supported by an <strong>FSR-FNRS Incoming Postdoctoral Fellowship</strong>  at the <strong> Institute of Mechanics, Materials and Civil Engineering (iMMC)</strong> , this project brings together my two main research lines: turbulent flow through vegetation and unsteady flood and dam-break waves.</p>
+    <p> <strong> Urban flood </strong> models based on the depth-averaged shallow-water equations can account for buildings in different ways. The most accurate is the <em>building-hole</em> approach, where every building is cut out of the computational mesh; however, meshing each building individually is very time-consuming and computationally demanding at the scale of a city. For this reason, buildings are often represented through an <em>increased roughness</em>, which is fast but not physically based. The <em>drag approach</em> offers a compromise: it is computationally efficient and more physically based, as buildings act on the flow through a drag force proportional to a drag coefficient C<sub>D</sub>.</p>
     <p>For an isolated building, the value of C<sub>D</sub> to use in the model is well known. A more efficient, bulk approach, however, treats a whole block of neighbouring buildings as a single <em>porous medium</em> with its own drag coefficient, instead of assigning a C<sub>D</sub> to every building. How much drag such a porous zone of buildings exerts on the flow, and how it depends on the building layout, is still an open question. This project aims to provide the C<sub>D</sub> of porous zones composed of buildings.</p>
     <p>The project combines <strong>laboratory experiments</strong>, measuring the bulk drag force on patches of buildings under steady flow (C<sub>D</sub>) and dam-break waves (C<sub>D</sub>(t)), with <strong>numerical simulations</strong>, from high-resolution 3D simulations to depth-averaged 2D models using the roughness, drag and building-hole approaches. Together they provide a <strong>fundamental understanding</strong> of the flow mechanisms, of wake interaction and sheltering between buildings, and of the key controlling parameters: the layout topology, the solid volume fraction (SVF) and the ratio d/D.</p>
     <p>The experimental and numerical data are then used to train a <strong>multilayer artificial neural network (ANN)</strong> that predicts the bulk drag coefficient of any building layout. The final goal is a <strong>general predictive formula</strong>, C<sub>D</sub>(topology, SVF, d/D, t), that can be implemented directly in shallow-water models through the drag term C<sub>D</sub>U<sup>2</sup>, improving how flood hazard is predicted and mitigated in cities.</p>
@@ -66,7 +66,7 @@
 
 <section>
   <div class="container narrow">
-    <div class="num" style="font-family:var(--serif);font-size:2rem;color:var(--accent)">01</div>
+    <div class="num">01</div>
     <h2>Flood propagation and mitigation of geological hazards associated with floods and dam breaks </h2>
     <p> The research combined laboratory experiments and advanced numerical simulations to investigate dam-break wave dynamics over fixed and mobile beds and their impact on vertical structures. High-speed imaging and pressure measurements were used to characterize wave propagation and impact forces. Two- and three-dimensional Navier–Stokes models were employed and compared with simplified shallow-water approaches to assess accuracy and computational efficiency. The study was extended to non-Newtonian fluids using power-law rheology, revealing the critical role of turbulence in governing mudflow-like wave dynamics, bed shear stresses, and impact forces</p>
     <p class="related"><strong>Related work:</strong> Modelling the impact of a dam‐break wave on a vertical wall, ESPL (2024); Large eddy simulation of power-law fluid dam break wave impacting against a vertical wall, PRF (2024); Dam-Break waves over mobile bed, AWR (2024); Turbulent dam-break waves of Newtonian and non-Newtonian fluids, JFM (2025).</p>
@@ -90,7 +90,7 @@
 
 <section class="soft">
   <div class="container narrow">
-    <div class="num" style="font-family:var(--serif);font-size:2rem;color:var(--accent)">02</div>
+    <div class="num">02</div>
     <h2>Flow in porous media & vegetated canopies</h2>
     <p> My research bridges high-resolution Large-Eddy Simulations (LES) and field measurements to investigate turbulence, secondary currents, and transport processes in vegetated open-channel flows. Numerical studies focus on flow structures, wake dynamics, drag forces, and sediment erosion/deposition around emergent and submerged vegetation patches, examining the influence of vegetation density, submergence, and flow conditions. Complementary field investigations using Acoustic Doppler Velocimetry (ADV) characterize three-dimensional flow structures, turbulence anisotropy, and spectral dynamics under different natural vegetation configurations, providing insights into mixing and momentum exchange in vegetated rivers. </p>
     <p class="related"><strong>Related work:</strong> Influence of emergent and submerged plants on local hydrodynamics and turbulence anisotropy in vegetated rivers, JoH (2026); Drag forces and flow structure around and inside a square array of emerged cylinders in an open channel, JFM (2026).</p>
@@ -114,7 +114,7 @@
 
 <section>
   <div class="container narrow">
-    <div class="num" style="font-family:var(--serif);font-size:2rem;color:var(--accent)">03</div>
+    <div class="num">03</div>
     <h2>Flow and turbulent coherent structures around hydraulic structures</h2>
     <p>My research, supported by the South Florida Water Management District, focused on the formation and suppression of free-surface and subsurface vortices in multi-bay pump stations. I developed high-resolution Detached-Eddy Simulations (DES) with a deformable free surface to investigate vortex dynamics, air entrainment, and pump-column swirl under different operating conditions and flow-control configurations. Numerical predictions were validated against laboratory experiments, demonstrating the potential of eddy-resolving simulations for optimizing pump station design. The research also addresses turbulence-model performance and scale effects between laboratory models and full-scale pump stations, highlighting the advantages of numerical approaches for assessing complex hydraulic phenomena.</p>
     <p class="related"><strong>Related work:</strong> Detached Eddy Simulation Model to Evaluate Design of Pump Stations, JHE (2026).</p>
@@ -138,7 +138,7 @@
 
 <section class="soft">
   <div class="container narrow">
-    <div class="num" style="font-family:var(--serif);font-size:2rem;color:var(--accent)">04</div>
+    <div class="num">04</div>
     <h2>Morpho-dynamics of ephemeral rivers</h2>
     <p> During my postdoctoral research at the University of Naples, I contributed to the development of a connectivity-based algorithm for extracting active channel networks and quantifying morphodynamic changes from geospatial data. The framework integrates drone-based photogrammetry and satellite DInSAR measurements to identify sediment transport indicators and estimate morphologically active channel widths. Its flexible structure enables application across different river environments and spatial scales.  </p>
     <p class="related"><strong>Related work: </strong> A physics-based channel extraction method from geospatial data based on structural connectivity (in preparation for WRR).</p>

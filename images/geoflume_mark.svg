@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="38 48 324 196" role="img" aria-label="GeoFlume lab emblem">
+<defs>
+  <clipPath id="dome"><path d="M48 236 V210 A152 152 0 0 1 352 210 V236 Z"/></clipPath>
+  <!-- worn print texture: knocks small specks out of the artwork -->
+  <filter id="worn" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="1" seed="4" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -24 17.6" result="m"/>
+    <feComposite in="SourceGraphic" in2="m" operator="in"/>
+  </filter>
+</defs>
+<g>
+<g clip-path="url(#dome)">
+  <!-- banded sky -->
+  <rect x="40" y="50" width="320" height="170" fill="#cfd3d9"/>
+  <path d="M40 104 C90 98 120 92 160 96 C190 99 200 106 230 104 L230 116 C190 118 160 112 120 114 C90 116 70 118 40 118 Z" fill="#3f7fc4"/>
+  <path d="M40 112 C70 108 100 104 140 108 L140 116 C100 116 70 118 40 120 Z" fill="#5b4a8b" opacity=".85"/>
+  <path d="M190 136 C240 131 300 134 360 129 V137 C300 141 250 139 190 142 Z" fill="#ec7a35"/>
+  <path d="M220 146 C270 142 320 146 360 142 V152 C320 156 270 152 220 156 Z" fill="#3f7fc4" opacity=".75"/>
+  <path d="M40 146 C80 142 110 146 150 144 V152 C110 154 80 152 40 156 Z" fill="#5b4a8b"/>
+
+  <!-- back ranges -->
+  <path d="M40 220 L40 178 C48 174 54 164 62 160 L68 165 C74 152 82 146 90 150 C96 154 98 164 104 159 C110 134 118 110 128 104 L134 111 C142 124 148 146 154 162 L158 159 C164 180 170 200 176 240 Z" fill="#fbf1d9" stroke="#14263f" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M86 150 C92 168 90 188 98 220 L120 220 C110 196 104 176 100 156 Z M134 108 C142 134 150 170 152 220 L176 220 C168 186 156 150 134 130 Z" fill="#14263f"/>
+  <path d="M264 220 C272 196 280 178 290 166 L295 170 C300 158 306 150 314 148 C320 147 324 154 328 160 L333 157 C340 168 348 180 360 184 L360 240 Z" fill="#fbf1d9" stroke="#14263f" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M314 148 C322 168 330 196 330 220 L360 240 L360 190 C346 182 330 162 314 148 Z" fill="#14263f"/>
+
+  <!-- main peak -->
+  <path d="M164 224.4 C172 205.7 180 188.5 190 172.9 L196 176 C200 160.4 206 146.4 214 135.5 L220 138.6 C224 126.1 228 116.8 236 112.1 C244 109 248 118.3 250 127.7 L256 126.1 C262 151.1 270 187 290 240 Z" fill="#fbf1d9" stroke="#14263f" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M238 113.6 C244 130.8 246 158.9 250 185.4 C254 202.6 262 215 270 224.4 L290 224.4 C270 188.5 262 151.1 256 126.1 L250 127.7 C248 119.9 244 113.6 238 113.6 Z" fill="#14263f"/>
+  <path d="M214 133.9 C210 154.2 200 177.6 196 197.9" fill="none" stroke="#14263f" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- rain cloud over the summit, rain falling on the landslide -->
+  <g stroke="#7cc4ec" stroke-width="2.8" stroke-linecap="round">
+    <line x1="222" y1="108" x2="218" y2="120"/><line x1="234" y1="110" x2="230" y2="122"/>
+    <line x1="246" y1="108" x2="242" y2="120"/><line x1="258" y1="110" x2="254" y2="122"/>
+  </g>
+
+  <!-- landslide down the face of the main peak, stopping at the town -->
+  <path d="M222 140.2 C228 135.5 238 137 238 143.3 C242 160 250 174 262 184 L260 191 L216 191 C214 176 218 160 222 140.2 Z" fill="#c27d3e" stroke="#14263f" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M228 148 C226 164 228 176 236 186" fill="none" stroke="#fbf1d9" stroke-width="2.5" stroke-linecap="round" opacity=".7"/>
+
+  <!-- town on the far bank -->
+  <g fill="#fbf1d9" stroke="#14263f" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="254" y="164" width="16" height="28"/><rect x="270" y="152" width="14" height="40"/>
+    <rect x="284" y="170" width="18" height="22"/><rect x="302" y="176" width="14" height="16"/>
+  </g>
+  <g fill="#14263f">
+    <rect x="258" y="170" width="3" height="4"/><rect x="264" y="170" width="3" height="4"/>
+    <rect x="258" y="179" width="3" height="4"/><rect x="264" y="179" width="3" height="4"/>
+    <rect x="274" y="158" width="3" height="4"/><rect x="279" y="158" width="3" height="4"/>
+    <rect x="274" y="168" width="3" height="4"/><rect x="279" y="168" width="3" height="4"/>
+    <rect x="289" y="176" width="3" height="4"/><rect x="295" y="176" width="3" height="4"/>
+    <rect x="307" y="181" width="3" height="4"/>
+  </g>
+  <!-- mud spreading around the buildings down to the water -->
+  <path d="M232 192 C244 186 256 190 270 188 C286 186 300 190 318 191 L318 196 L232 196 Z" fill="#c27d3e" stroke="#14263f" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- alpine trees on the banks -->
+  <g fill="#14263f">
+    <polygon points="62,162 55.07,173.4 58.22,173.4 51.92,183 56.33,183 49.4,189.6 74.6,189.6 67.67,183 72.08,183 65.78,173.4 68.93,173.4"/><rect x="60.5" y="189" width="3" height="5"/><polygon points="80,155 71.222,169.44 75.212,169.44 67.232,181.6 72.818,181.6 64.04,189.96 95.96,189.96 87.182,181.6 92.768,181.6 84.788,169.44 88.778,169.44"/><rect x="78.5" y="189.2" width="3" height="5.800000000000001"/><polygon points="98,164 91.532,174.64 94.472,174.64 88.592,183.6 92.708,183.6 86.24,189.76 109.76,189.76 103.292,183.6 107.408,183.6 101.528,174.64 104.468,174.64"/><rect x="96.5" y="189.2" width="3" height="4.800000000000001"/><polygon points="118,159 110.146,171.92000000000002 113.716,171.92000000000002 106.576,182.8 111.574,182.8 103.72,190.28 132.28,190.28 124.426,182.8 129.424,182.8 122.284,171.92000000000002 125.854,171.92000000000002"/><rect x="116.5" y="189.6" width="3" height="5.4"/><polygon points="138,168 132.456,177.12 134.976,177.12 129.936,184.8 133.464,184.8 127.92,190.08 148.08,190.08 142.536,184.8 146.064,184.8 141.024,177.12 143.544,177.12"/><rect x="136.5" y="189.6" width="3" height="4.4"/>
+    <polygon points="328,166 321.994,175.88 324.724,175.88 319.264,184.2 323.086,184.2 317.08,189.92 338.92,189.92 332.914,184.2 336.736,184.2 331.276,175.88 334.006,175.88"/><rect x="326.5" y="189.4" width="3" height="4.6"/><polygon points="344,173 339.38,180.6 341.48,180.6 337.28,187 340.22,187 335.6,191.4 352.4,191.4 347.78,187 350.72,187 346.52,180.6 348.62,180.6"/><rect x="342.5" y="191" width="3" height="4"/>
+  </g>
+
+  <!-- river flowing in front of the town -->
+  <path d="M38 198 C90 192 140 206 200 202 C250 199 300 206 362 200 V250 H38 Z" fill="#9fd6ee" stroke="#14263f" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M66 214 C82 210 98 213 112 214 M150 216 C166 213 182 215 196 214 M236 214 C252 211 268 213 282 214 M100 226 C116 223 132 225 146 226 M200 227 C216 224 232 226 246 227 M290 225 C306 222 322 224 334 224" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- cloud: cream with a dark outline -->
+  <g fill="#14263f">
+    <circle cx="222" cy="88" r="13"/><circle cx="240" cy="78" r="17"/><circle cx="260" cy="84" r="14"/><rect x="209" y="86" width="64" height="15.5" rx="7.5"/>
+  </g>
+  <g fill="#fbf1d9">
+    <circle cx="222" cy="88" r="9.5"/><circle cx="240" cy="78" r="13.5"/><circle cx="260" cy="84" r="10.5"/><rect x="212.5" y="89.5" width="57" height="8.5" rx="4.2"/>
+  </g>
+</g>
+<!-- dome outline -->
+<path d="M48 236 V210 A152 152 0 0 1 352 210 V236 Z" fill="none" stroke="#14263f" stroke-width="11" stroke-linejoin="round"/>
+</g>
+</svg>
