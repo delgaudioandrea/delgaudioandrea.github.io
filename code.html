@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Code — Andrea Del Gaudio</title>
+  <meta name="description" content="Personal academic website of Andrea Del Gaudio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">AD</span>
+      <span>
+        <span class="brand-name">Andrea Del Gaudio</span>
+        <span class="brand-sub">PhD, Civil and Environmental Engineer</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="code.html" class="active">Code</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="container narrow">
+    <p class="eyebrow">Software</p>
+    <h1>Code &amp; tools</h1>
+    <p class="lead">Open-source code developed for my research, free to download and use.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container narrow">
+    <!-- ===== PROJECT: MUSCL2D ===== -->
+    <div class="code-card">
+      <div class="lang">MATLAB</div>
+      <h2>MUSCL2D — 2D shallow water equations solver</h2>
+      <p>A second-order finite-volume solver for the two-dimensional shallow water equations, written in MATLAB. It includes a ready-to-run example of a <strong>dam-break wave propagating over a smooth, flat, dry bed</strong>, validated against a reference solution.</p>
+      <ul>
+        <li>MUSCL-Hancock reconstruction, second order in space and time, with minmod slope limiter</li>
+        <li>Rusanov (local Lax–Friedrichs) numerical flux at cell interfaces</li>
+        <li>Adaptive time step from the CFL condition</li>
+        <li>Bed friction with the Blasius friction factor, computed from the local Reynolds number</li>
+        <li>Wet/dry treatment and reflective wall boundaries</li>
+      </ul>
+
+      <div class="figures single">
+        <figure>
+          <img src="images/muscl2d_validation.png" alt="MUSCL2D dam-break validation: friction, free surface and velocity">
+          <figcaption><em>Fig.</em> — Dam-break wave over a smooth flat bed at t/t<sub>0</sub> = 2.8: friction term, free surface and velocity computed by MUSCL2D (blue) compared with the reference solution SM-T0 (red).</figcaption>
+        </figure>
+      </div>
+
+      <div class="btns">
+        <a class="btn primary" href="files/MUSCL2D.zip" download>Download the code (.zip, 0.9 MB) &darr;</a>
+      </div>
+      <p class="muted-note">To run the example: unzip, set the folder as the MATLAB current folder and run <code>MUSCL_SWE_2D.m</code>. See <code>README.txt</code> for the main parameters.</p>
+    </div>
+
+    <!-- To add another project, copy the block from "PROJECT: MUSCL2D" down to its closing </div>,
+         paste it here and add <hr class="sep"> between the two projects. -->
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Andrea Del Gaudio</h4>
+        <p>Post Doctoral Associate <br> iMMC, Université Catholique de Louvain </p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="code.html">Code</a></li>
+          <li><a href="cv.html">CV</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:andrea.delgaudio@uclouvain.be">Email</a></li>
+          <li><a href="https://orcid.org/0000-0003-1419-1090">ORCID</a></li>
+          <li><a href="https://scholar.google.com/citations?user=aR6D2nIAAAAJ">Google Scholar</a></li>
+          <li><a href="https://github.com/delgaudioandrea">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; <span id="year"></span> Andrea Del Gaudio</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
